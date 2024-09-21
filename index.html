@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor</title>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- <script src="./index.js" defer></script> -->
+    <script src="./switch.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>
+      <span class="rock">Rock</span> -> <span class="paper">Paper</span> <-
+      <span class="scissor">Scissor</span>
+    </h1>
+    <div class="overlay" hidden>
+
+    </div>
+
+    <div class="modal hide" id="modal">
+      
+        <lord-icon
+    trigger="loop"
+    stroke="bold"
+    state="loop-roll"
+    colors="primary:#362f07,secondary:#7fffd63d"
+    style="width:50px;height:50px">
+  </lord-icon>
+  
+  <p class="whoWins"></p>
+  <small class="hints"></small>
+  <div class="btn__conatiner">
+    <button id="tryAgain">Try Again</button>
+    <button id="quitGame">Quit Game</button>
+  </div>
+</div>
+</body>
+</html>
+
+<!-- src="https://media.lordicon.com/icons/wired/lineal/456-handshake-deal.json" handshake -->
+<!-- src="https://media.lordicon.com/icons/wired/lineal/433-cup-prize.json" -->
+<!-- src="https://media.lordicon.com/icons/wired/lineal/2511-artificial-intelligence-ai.json" -->
+<!-- colors="primary:#7fffd600,secondary:#ffd700" -->

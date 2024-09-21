@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", Courier, monospace;
+}
+body {
+  position: relative;
+    background: rgb(21, 32, 32);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  min-block-size: 150dvh;
+  color: rgba(127, 255, 212, 0.159);
+  & span{
+    font-style: italic;
+  font-weight: 800;
+  }
+
+  & .rock{
+    color: burlywood;
+  }
+  & .paper{
+    color: chocolate;
+  }
+  & .scissor{
+    color: cadetblue;
+  }
+}
+
+.modal{
+  position: fixed;
+  top: 50%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 2vh;
+  color: red;
+  border: none;
+  display: grid;
+  place-items: center;
+  background: rgba(84, 61, 61, 0.85);
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.412);
+}
+
+.hide{
+  opacity: 0;
+}
+
+button{
+  border: none;
+  color: bisque;
+  background: rgb(49, 47, 47);
+  width: 100%;
+  padding: 0.5vh 2vw;
+  margin: 0.5rem 0;
+  font-weight:200;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  transition: all 0.2s linear;
+}
+
+
+small{
+  color: red;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+p{
+  color: green;
+  font-size: 10vh;
+  font-weight: bolder;
+  white-space: nowrap;
+  word-spacing: 1px;
+}
+
+h4{
+  color: yellowgreen;
+  font-size: 10dvh;
+  filter: drop-shadow(0px 2px 5px rgba(49, 55, 5, 0.303));
+}
+
+button:hover{
+  background: rgb(66, 101, 20);
+}
+
+button:active{
+  transform: translate(2px, 2px) scale(0.95);
+}
+
+
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background: rgba(49,49,49,0.8);
+}
